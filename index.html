@@ -8,6 +8,11 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+<style>
+  .gradient{
+    background-image: linear-gradient(to right , #3752FD ,#6C7FFA , #9BA8F8);
+  }
+</style>
 
 </head>
 <body class="bg-gray-400">
@@ -20,8 +25,8 @@
             </div>
             <div class="flex items-center space-x-9">
                 <div class="rounded-2xl flex items-center space-x-9 p-2 bg-gray-200">
-                    <input type="checkbox" checked="checked" class="checkbox" />
-                <h1 class="text-3xl font-bold">23</h1>
+                  <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                <h1 id="nav-count" class="text-3xl font-bold">23</h1>
                 </div>
                 <button class=""><img src="assets/theme-btn.png" alt=""></button>
             </div>
@@ -36,16 +41,18 @@
             <input type="checkbox" checked="checked" class="checkbox" />
             <div>
                 <h1>Task Assigned </h1>
-                <h1 class="font-bold text-3xl">06</h1>
+                <h1 id="task-count" class="font-bold text-3xl">06</h1>
             </div>
          </div>
-        <div class="w-md h-[128px] justify-center items-center flex bg-linear-[120deg,blue_1%,blue_1%,blue_20%,white] rounded-2xl ">
-            <button class="flex justify-center space-x-3 items-center"><img src="assets/board.png" alt=""><h1>Discover Something <br> New Today!</h1> </button>
+        <div class="w-md h-[128px] justify-center items-center flex gradient rounded-2xl ">
+            <button class="flex justify-center space-x-3 items-center"><img src="assets/board.png" alt=""><h1 class="text-white font-bold">Discover Something <br> New Today!</h1> </button>
         </div>
         <div class=" space-x-3 rounded-2xl flex bg-gray-200 items-center justify-center w-3xs h-[128px]">
-            <img src="assets/calender.png" alt="">
-            <div>
-                <h1>Wed , <span></span></h1>
+          <img src="assets/calender.png" alt="">
+            <div clas="space-y-2">
+              
+              <h1 class=" text-xl"  id="wed-date-2"></h1>
+                <h1 class="font-bold text-xl"  id="wed-date"> </h1>
             </div>
         </div>
     </div>
@@ -53,78 +60,78 @@
         <div class="card bg-gray-200 w-80 h-79 shadow-xl">
             <div class="card-body">
               <h3 class="text-base bg-white w-20 rounded-2xl px-2">ShopEase</h3>
-              <h1 class="text-2xl">Fix Mobile Button Issue </h1>
+              <h1 id="title-1" class="text-2xl">Fix Mobile Button Issue </h1>
               <p class="text-base bg-white rounded-2xl p-4">Debug using Chrome DevTools, check for overlapping elements....</p>
 
               
               <div class="card-actions justify-between mt-2">
                 <h4 class="text-sm ">Deadline <br><span class="font-bold">21 March 2025</span></h4>
-                <button class="btn btn-primary px-4 py-2">Completed</button>
+                <button id="card-btn-1" class="btn btn-primary px-4 py-2">Completed</button>
               </div>
             </div>
           </div>
           <div class="card bg-gray-200 w-80 h-79 shadow-xl">
             <div class="card-body">
               <h3 class="text-base bg-white w-20 rounded-2xl px-2">ShopEase</h3>
-              <h1 class="text-2xl">Improve Job searching </h1>
+              <h1 id="title-2" class="text-2xl">Improve Job searching </h1>
               <p class="text-base bg-white rounded-2xl p-4">Debug using Chrome DevTools, check for overlapping elements....</p>
 
               
               <div class="card-actions justify-between mt-2">
                 <h4 class="text-sm ">Deadline <br><span class="font-bold">21 March 2025</span></h4>
-                <button class="btn btn-primary px-4 py-2">Completed</button>
+                <button id="card-btn-2" class="btn btn-primary px-4 py-2">Completed</button>
               </div>
             </div>
           </div>
           <div class="card bg-gray-200 w-80 h-79 shadow-xl">
             <div class="card-body">
               <h3 class="text-base bg-white w-20 rounded-2xl px-2">ShopEase</h3>
-              <h1 class="text-2xl">Add Dark Mode </h1>
+              <h1 id="title-3" class="text-2xl">Add Dark Mode </h1>
               <p class="text-base bg-white rounded-2xl p-4">Debug using Chrome DevTools, check for overlapping elements....</p>
 
               
               <div class="card-actions justify-between mt-2">
                 <h4 class="text-sm ">Deadline <br><span class="font-bold">21 March 2025</span></h4>
-                <button class="btn btn-primary px-4 py-2">Completed</button>
+                <button id="card-btn-3"  class="btn btn-primary px-4 py-2">Completed</button>
               </div>
             </div>
           </div>
           <div class="card bg-gray-200 w-80 h-79 shadow-xl">
             <div class="card-body">
               <h3 class="text-base bg-white w-20 rounded-2xl px-2">ShopEase</h3>
-              <h1 class="text-2xl">Optimize  Home page </h1>
+              <h1 id="title-4" class="text-2xl">Optimize  Home page </h1>
               <p class="text-base bg-white rounded-2xl p-4">Debug using Chrome DevTools, check for overlapping elements....</p>
 
               
               <div class="card-actions justify-between mt-2">
                 <h4 class="text-sm ">Deadline <br><span class="font-bold">21 March 2025</span></h4>
-                <button class="btn btn-primary px-4 py-2">Completed</button>
+                <button id="card-btn-4" class="btn btn-primary px-4 py-2">Completed</button>
               </div>
             </div>
           </div>
           <div class="card bg-gray-200 w-80 h-79 shadow-xl">
             <div class="card-body">
               <h3 class="text-base bg-white w-20 rounded-2xl px-2">ShopEase</h3>
-              <h1 class="text-2xl">Add new emoji 🤲 </h1>
+              <h1 id="title-5" class="text-2xl">Add new emoji 🤲 </h1>
               <p class="text-base bg-white rounded-2xl p-4">Debug using Chrome DevTools, check for overlapping elements....</p>
 
               
               <div class="card-actions justify-between mt-2">
                 <h4 class="text-sm ">Deadline <br><span class="font-bold">21 March 2025</span></h4>
-                <button class="btn btn-primary px-4 py-2">Completed</button>
+                <button id="card-btn-5" class="btn btn-primary px-4 py-2">Completed</button>
               </div>
             </div>
           </div>
           <div class="card bg-gray-200 w-80 h-79 shadow-xl">
             <div class="card-body">
               <h3 class="text-base bg-white w-20 rounded-2xl px-2">ShopEase</h3>
-              <h1 class="text-2xl">Integrate OpenAI API </h1>
+              <h1 id="title-6" class="text-2xl">Integrate OpenAI API </h1>
               <p class="text-base bg-white rounded-2xl p-4">Debug using Chrome DevTools, check for overlapping elements....</p>
 
               
               <div class="card-actions justify-between mt-2">
                 <h4 class="text-sm ">Deadline <br><span class="font-bold">21 March 2025</span></h4>
-                <button class="btn btn-primary px-4 py-2">Completed</button>
+                <button id="card-btn-6" class="btn btn-primary px-4 py-2">Completed</button>
               </div>
             </div>
           </div>
@@ -141,8 +148,11 @@
              <button class="btn btn-primary">Clear History</button>
          </div>
 
-         <div></div>
+         <div id="clear-Box">
+          
+         </div>
     </div>
    </main>
+   <script src="script/scripts.js"></script>
 </body>
 </html>
