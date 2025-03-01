@@ -150,6 +150,7 @@ const title = document.getElementById('title-6').innerText;
 
 
 
+// button backgroun change 
 
 function ChangeBackgroundColor(){
    const colors =['blue', 'green', 'yellow', 'purple', 'orange', 'pink']
@@ -157,4 +158,14 @@ function ChangeBackgroundColor(){
    document.body.style.backgroundColor = randomColor;
 }
 
+// clear history  button 
+
+document.getElementById('clear-history-btn').addEventListener('click', function(event){
+   event.preventDefault();
+
+   const clearBox =document.getElementById('clear-Box');
+   clearBox.disabled = true;
+   clearBox.innerHTML = '';
+
+})
 
