@@ -144,8 +144,17 @@ const title = document.getElementById('title-6').innerText;
 
  
  if(button.disabled==true){
-    alert('congrates!!!! you have completed all the task')
+    alert('congrates!!!! you have completed allt the task')
  } 
 })
+
+
+
+
+function ChangeBackgroundColor(){
+   const colors =['blue', 'green', 'yellow', 'purple', 'orange', 'pink']
+   const randomColor = colors[Math.floor(Math.random() * colors.length)];
+   document.body.style.backgroundColor = randomColor;
+}
 
 
