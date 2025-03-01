@@ -140,5 +140,12 @@ const title = document.getElementById('title-6').innerText;
   You have completed the task  ${title} at ${time}
  `
    clearBox.appendChild(p);
+
+
+ 
+ if(button.disabled==true){
+    alert('congrates!!!! you have completed all the task')
+ } 
 })
+
 
