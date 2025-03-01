@@ -169,3 +169,9 @@ document.getElementById('clear-history-btn').addEventListener('click', function(
 
 })
 
+document.getElementById('discover-button').addEventListener('click',function(event){
+   event.preventDefault();
+   window.location.href='./main.html';
+
+})
+
