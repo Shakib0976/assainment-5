@@ -25,6 +25,12 @@ const title = document.getElementById('title-1').innerText;
   You have completed the task  ${title} at ${time}
  `
    clearBox.appendChild(p);
+
+
+   const takCount =parseInt(document.getElementById('task-count').innerText);
+   if(takCount  == 0){
+      alert('congrates!!!! you have completed all the task')
+   }
 })
 
 document.getElementById('card-btn-2').addEventListener('click', function (){
@@ -48,6 +54,12 @@ const title = document.getElementById('title-2').innerText;
   You have completed the task  ${title} at ${time}
  `
    clearBox.appendChild(p);
+
+
+   const takCount =parseInt(document.getElementById('task-count').innerText);
+   if(takCount  == 0){
+      alert('congrates!!!! you have completed all the task')
+   }
 })
 
 document.getElementById('card-btn-3').addEventListener('click', function (){
@@ -71,6 +83,12 @@ const title = document.getElementById('title-3').innerText;
   You have completed the task  ${title} at ${time}
  `
    clearBox.appendChild(p);
+
+
+   const takCount =parseInt(document.getElementById('task-count').innerText);
+   if(takCount  == 0){
+      alert('congrates!!!! you have completed all the task')
+   }
 })
 
 document.getElementById('card-btn-4').addEventListener('click', function (){
@@ -94,6 +112,12 @@ const title = document.getElementById('title-4').innerText;
   You have completed the task  ${title} at ${time}
  `
    clearBox.appendChild(p);
+
+
+   const takCount =parseInt(document.getElementById('task-count').innerText);
+   if(takCount  == 0){
+      alert('congrates!!!! you have completed all the task')
+   }
 })
 
 document.getElementById('card-btn-5').addEventListener('click', function (){
@@ -117,6 +141,12 @@ const title = document.getElementById('title-5').innerText;
   You have completed the task  ${title} at ${time}
  `
    clearBox.appendChild(p);
+
+
+   const takCount =parseInt(document.getElementById('task-count').innerText);
+   if(takCount  == 0){
+      alert('congrates!!!! you have completed all the task')
+   }
 })
 
 document.getElementById('card-btn-6').addEventListener('click', function (){
@@ -141,11 +171,12 @@ const title = document.getElementById('title-6').innerText;
  `
    clearBox.appendChild(p);
 
-
+   const takCount =parseInt(document.getElementById('task-count').innerText);
+   if(takCount  == 0){
+      alert('congrates!!!! you have completed all the task')
+   }
  
- if(button.disabled==true){
-    alert('congrates!!!! you have completed allt the task')
- } 
+ 
 })
 
 
